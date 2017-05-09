@@ -1,5 +1,12 @@
 (function() {
 
+    var arr_slides = document.querySelectorAll(".slide");
+    arr_length = arr_slides.length;
+    //console.log(arr_length)
+    first = arr_slides[0];
+
+    console.log(classie.hasClass(first, "is-active"));
+
     window.addEventListener("wheel", function(e) {
         
 
@@ -9,8 +16,9 @@
             console.log("Up");
         }
 
-        if (dir === 1) {
+        else {
             console.log("Down");
+            
         }
 
 
