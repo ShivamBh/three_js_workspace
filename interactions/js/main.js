@@ -35,7 +35,7 @@
         classie.remove(arr_slides[curr_index], "is-active");
         classie.add(arr_slides[curr_index+1], "is-active");
         if (curr_index === 0) {
-            return false
+            return;
         }
         curr -= 1;
         next -= 1;
@@ -44,7 +44,7 @@
     //func get current elem from index param
     function get_next_slide(curr_index) {
         if (curr_index === arr_length) {
-            return false;
+            return;
         }
         classie.remove(arr_slides[curr_index], "is-active");
         classie.add(arr_slides[curr_index+1], "is-active");
